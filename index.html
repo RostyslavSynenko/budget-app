@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Budget App</title>
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1>Budget App</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="form-container">
+                    <div class="budget-feedback alert">Value cannot be empty or negative</div>
+                    <form id='budget-form'>
+                        <h2>Please enter your budget</h2>
+                        <input type="number" id="budget-input" required><br>
+                        <button type="submit" id="budget-submit" class="btn budget-btn">Calculate</button>
+                    </form>
+                </div>
+
+                <div class="app-info">
+                    <div>
+                        <h3 class="app-info-title">Budget</h3>
+                        <span class="budget-icon"><i class="icon money-bill-icon"></i></span>
+                        <h3 class="amount budget-amount"><span>$ </span><span id="budget-amount">0</span></h3>
+                    </div>
+                    <div>
+                        <h3 class="app-info-title">Expenses</h3>
+                        <span class="expense-icon"><i class="icon credit-card-icon"></i></span>
+                        <h3 class="amount expense-amount"><span>$ </span><span id="expense-amount">0</span></h3>
+                    </div>
+                    <div>
+                        <h3 class="app-info-title">Balance</h3>
+                        <span class="balance-icon"><i class="icon dollar-sign-icon"></i></span>
+                        <h3 class="amount balance-amount"><span>$ </span><span id="balance-amount">0</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class=container>
+                <div class="form-container">
+                    <div class="expense-feedback alert">Values cannot be empty or negative</div>
+                    <form id='expense-form'>
+                        <h2>Please enter your expence</h2>
+                        <input type="text" id="expense-name-input" required>
+                        <h2>Please enter your expence</h2>
+                        <input type="number" id="expense-amount-input" required><br>
+                        <button type="submit" id="expense-submit" class="btn expense-btn">Add Expense</button>
+                    </form>
+                </div>
+
+                <div class="expense-list" id="expense-list">
+                    <div class="expense-list-info">
+                        <h3 class="list-item">Expense Title</h3>
+                        <h3 class="list-item">Expense Value</h3>
+                        <h3 class="list-item"></h3>
+                    </div>
+                    
+                    <!--
+                    <div class="expense-item">
+                        <h3 class="expense-title list-item">- ${expense.title}</h3>
+                        <h3 class="expense-value list-item"></h3>
+                        <div class="expense-item-icons list-item">
+                            <a href="#" class="edit-btn" data-id="${expense.id}">
+                                <i class="edit-icon"></i>
+                            </a>
+                            <a href="#" class="delete-btn" data-id="${expense.id}">
+                                <i class="delete-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </main>
+        <script src="js/index.js"></script>
+    </body> 
+</html>
