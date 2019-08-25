@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap');
+
+:root {
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(224, 224, 224);
+    font-family: 'Raleway', sans-serif;
+    --green: rgb(0, 163, 0);
+    --red: rgb(223, 3, 3);
+}
+
+body {
+    margin: 0;
+    padding: 15px 50px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+main .form-container {
+    width: 35%;
+}
+
+main .form-container .alert {
+    display: none;
+    height: 70px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 70px;
+    border-radius: 5px;
+    background-color: rgba(223, 3, 3, 0.15);
+}
+
+main .form-container .show {
+    display: block;
+}
+
+main .form-container h2 {
+    font-size: 19px;
+    margin: 0 0 10px 0;    
+}
+
+main .form-container input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+main .form-container .btn {
+    font-size: 15px;
+    background: none;
+    padding: 7px 15px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+main .form-container .budget-btn {
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+main .form-container .budget-btn:hover {
+    color: white;
+    background-color: var(--green);
+}
+
+main .form-container .expense-btn {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+main .form-container .expense-btn:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+main .form-container #budget-form {
+    padding: 15px;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+}
+
+main .form-container #expense-form {
+    padding: 15px;
+    border: 2px solid var(--red);
+    border-radius: 5px;
+}
+
+main .app-info {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    text-align: center;
+}
+
+main .app-info .app-info-title {
+    margin-top: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+main .app-info .amount {
+    margin: 15px 0 0 0;
+    font-size: 40px;
+}
+
+main .app-info .budget-amount {
+    color: var(--green);
+}
+
+main .app-info .expense-amount {
+    color: var(--red);
+}
+
+main .app-info .balance-amount.negative {
+    color: var(--red);
+}
+
+main .app-info .balance-amount.positive {
+    color: var(--green);
+}
+
+main .app-info .icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+main .app-info .budget-icon .money-bill-icon {
+    background: url('../img/bill_symbol.svg') no-repeat;
+    background-size: 70px 70px;
+}
+
+main .app-info .expense-icon .credit-card-icon {
+    background: url('../img/credit_card_symbol.svg') no-repeat;
+    background-size: 70px 70px;
+}
+
+main .app-info .balance-icon .dollar-sign-icon {
+    background: url('../img/dollar_symbol.svg') no-repeat;
+    background-size: 70px 70px;
+}
+
+main .expense-list {
+    width: 65%;
+}
+
+main .expense-list .expense-list-info {
+    display: flex;
+}
+
+main .expense-list .expense-list-info .list-item {
+    justify-content: space-around;
+    width: 33%;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
