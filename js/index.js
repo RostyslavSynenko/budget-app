@@ -92,10 +92,10 @@ class UI {
       <h3 class="expense-title list-item">- ${expense.title}</h3>
       <h3 class="expense-value list-item">${expense.value}</h3>
       <div class="expense-item-icons list-item">
-        <a href="#" class="edit-btn" data-id="${expense.id}">
+        <a href="#expense-form" class="edit-btn" data-id="${expense.id}">
           <i class="edit-icon"></i>
         </a>
-        <a href="#" class="delete-btn" data-id="${expense.id}">
+        <a href="#expense-form" class="delete-btn" data-id="${expense.id}">
           <i class="delete-icon"></i>
         </a>
       </div>
