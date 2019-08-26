@@ -70,7 +70,7 @@ class UI {
       this.balance.classList.remove('positive');
       this.balance.classList.add('negative');
     } else if(total === 0) {
-      this.balance.classList.remove('positive negative');
+      this.balance.classList.remove('positive', 'negative');
     }
 
     this.balanceAmount.textContent = total;
