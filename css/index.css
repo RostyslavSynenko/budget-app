@@ -154,17 +154,17 @@ main .app-info .icon {
 
 main .app-info .budget-icon .money-bill-icon {
     background: url('../img/bill_symbol.svg') no-repeat;
-    background-size: 70px 70px;
+    background-size: cover;
 }
 
 main .app-info .expense-icon .credit-card-icon {
     background: url('../img/credit_card_symbol.svg') no-repeat;
-    background-size: 70px 70px;
+    background-size: cover;
 }
 
 main .app-info .balance-icon .dollar-sign-icon {
     background: url('../img/dollar_symbol.svg') no-repeat;
-    background-size: 70px 70px;
+    background-size: cover;
 }
 
 main .expense-list {
@@ -190,7 +190,7 @@ main .expense-list .expense-item .edit-icon {
     width: 16px;
     height: 16px;
     background: url('../img/edit_button.svg') no-repeat;
-    background-size: 16px 16px;
+    background-size: cover;
 }
 
 main .expense-list .expense-item .delete-icon {
@@ -198,7 +198,7 @@ main .expense-list .expense-item .delete-icon {
     width: 16px;
     height: 16px;
     background: url('../img/delete_icon.svg') no-repeat;
-    background-size: 16px 16px;
+    background-size: cover;
 }
 
 main .expense-list .list-item {
@@ -232,5 +232,28 @@ main .expense-list .list-item {
     main .app-info {
         margin: 30px 0;
         width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    main .container {
+        margin: 0;
+    }
+
+    main .form-container {
+        width: 100%;
+    }
+
+    main .app-info .app-info-title {
+        font-size: 16px;
+    }
+
+    main .app-info .amount {
+        font-size: 20px;
+    }
+
+    main .app-info .icon {
+        width: 50px;
+        height: 50px;
     }
 }
