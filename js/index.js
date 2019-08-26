@@ -16,6 +16,7 @@ class UI {
     this.expenseList = document.getElementById('expense-list');
     this.itemList = [];
     this.itemId = 0;
+    this.edit = true;
   }
 
   submitBudgetForm() {
@@ -28,6 +29,7 @@ class UI {
         }, 2000);
       } else {
         this.budgetInput.value = '';
+
         this.budgetAmount.textContent = value;
         this.showBalance();
       }
@@ -56,6 +58,7 @@ class UI {
       this.addExpense(expense);
     }
 
+    this.edit = true;
     this.showBalance();
   }
 
@@ -105,6 +108,12 @@ class UI {
   }
 
   editExpense(e) {
+    if(this.edit === false) {
+      return;
+    }
+
+    this.edit = false;
+
     let expenseItem = e.target;
     let expenseId = parseInt(e.target.parentElement.dataset.id);
     const expense = this.itemList.filter(item => item.id === expenseId)[0];
